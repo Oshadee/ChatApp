@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 29, 2018, 10:59:52 AM
+    Author     : Oshadi
+*/
+
+body{
+    background-color: #3f4a78;
+}
+
+.create_new_thread_table_row{
+    padding-left: 5%;
+    padding-right: 0%;
+    margin-left: 11%;
+    margin-right: -22%;
+    padding-top: 5px;
+}
+
+.table_style{
+    width: 56%;
+    margin-left: 4%;
+}
+
+.thread-title_col_width{
+    width: 25%;
+}
+
+.by_col_width{
+    width: 25%;
+}
+
+
+.header_style{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #75caeb;
+}
+
+.textbox_style{
+    width: 100%;
+}
+
+.button_style{
+    width: 13%;
+    height: 50px;
+    margin-left: 25%;
+}
+
+.fieldset_style{
+    border: solid;
+    padding-bottom: 1%;
+    padding-left: -41px;
+    /* margin-left: -152px; */
+    width: 65%;
+    margin-left: 18%;
+    margin-top: 5%;
+    border-color: #75caeb;
+}
+
+.button_group_style{
+    margin-top: 19px;
+}
+
+.text_thread_created_by{
+    text-align: center;
+}
+
+.invlaid_error{
+    color: red;
+}

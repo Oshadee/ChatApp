@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://services.chatapp.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.chatapp.com/">
+
+<xs:element name="create_thread" type="tns:create_thread"/>
+
+<xs:element name="getAllThreads" type="tns:getAllThreads"/>
+
+<xs:element name="getAllThreadsBasedOnThreadID" type="tns:getAllThreadsBasedOnThreadID"/>
+
+<xs:element name="getAllThreadsBasedOnThreadIDResponse" type="tns:getAllThreadsBasedOnThreadIDResponse"/>
+
+<xs:element name="getAllThreadsResponse" type="tns:getAllThreadsResponse"/>
+
+<xs:element name="getEntriesBasedOnThreadID" type="tns:getEntriesBasedOnThreadID"/>
+
+<xs:element name="getEntriesBasedOnThreadIDResponse" type="tns:getEntriesBasedOnThreadIDResponse"/>
+
+<xs:element name="getLastEditedEntryBasedOnThreadID" type="tns:getLastEditedEntryBasedOnThreadID"/>
+
+<xs:element name="getLastEditedEntryBasedOnThreadIDResponse" type="tns:getLastEditedEntryBasedOnThreadIDResponse"/>
+
+<xs:element name="sendMessage" type="tns:sendMessage"/>
+
+<xs:element name="threadTitleExists" type="tns:threadTitleExists"/>
+
+<xs:element name="threadTitleExistsResponse" type="tns:threadTitleExistsResponse"/>
+
+<xs:complexType name="getAllThreads">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllThreadsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:threadTypeInfo" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="threadTypeInfo">
+<xs:sequence>
+<xs:element name="createdDate" type="xs:string" minOccurs="0"/>
+<xs:element name="createdTime" type="xs:string" minOccurs="0"/>
+<xs:element name="createdUser" type="tns:userInfo" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="userInfo">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="nickname" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="create_thread">
+<xs:sequence>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLastEditedEntryBasedOnThreadID">
+<xs:sequence>
+<xs:element name="threadID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLastEditedEntryBasedOnThreadIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:threadInfo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="threadInfo">
+<xs:sequence>
+<xs:element name="addedDate" type="xs:string" minOccurs="0"/>
+<xs:element name="addedTime" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+<xs:element name="threadTypeID" type="tns:threadTypeInfo" minOccurs="0"/>
+<xs:element name="usserID" type="tns:userInfo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="threadTitleExists">
+<xs:sequence>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="threadTitleExistsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllThreadsBasedOnThreadID">
+<xs:sequence>
+<xs:element name="threadID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllThreadsBasedOnThreadIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:threadInfo" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEntriesBasedOnThreadID">
+<xs:sequence>
+<xs:element name="threadID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEntriesBasedOnThreadIDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendMessage">
+<xs:sequence>
+<xs:element name="threadTypeID" type="xs:int"/>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+<xs:element name="addedDate" type="xs:string" minOccurs="0"/>
+<xs:element name="addedTime" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2018, 5:44:53 PM
+    Author     : Oshadi
+*/
+
+body{
+    background-color: #3f4a78;
+}
+
+.login_table_row{
+    padding-left: 13%;
+    padding-right: 0%;
+    margin-left: 11%;
+    margin-right: -6%;
+}
+.password_row{
+    padding-top: 5px;
+}
+
+.col_width{
+    width: 50%;
+}
+
+.login_ID_row{
+    padding-left: 20%;
+}
+
+.table_style{
+    width: 78%;
+    margin-left: -7%;
+}
+
+.header_style{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #75caeb;
+}
+
+.button_style{
+    width: 38%;
+    height: 50px;
+}
+
+.button_div_style{
+    padding-top: 1.6%;
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.fieldset_style{
+    border: solid;
+    padding-bottom: 1%;
+    padding-left: -41px;
+    /* margin-left: -152px; */
+    width: 41%;
+    margin-left: 29%;
+    margin-top: 5%;
+    border-color: #75caeb;
+    /* padding-left: 33%; */
+    /* padding-left: 211px; */
+}
+
+.invlaid_error{
+    color: red;
+    margin-left: 54px;
+}
+
+.register_btn_style{
+    margin-left: 31%;
+}

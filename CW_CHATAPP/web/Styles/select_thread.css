@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 29, 2018, 10:29:38 AM
+    Author     : Oshadi
+*/
+
+body{
+    background-color: #3f4a78;
+}
+
+.fieldset_style{
+    border: solid;
+    padding-bottom: 1%;
+    padding-left: -41px;
+    /* margin-left: -152px; */
+    width: 41%;
+    margin-left: 17%;
+    margin-top: 5%;
+    border-color: #75caeb;
+    /* padding-left: 33%; */
+    /* padding-left: 211px; */
+    width: 64%;
+    /* margin-right: -48px; */
+}
+
+.header_style{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #75caeb;
+    margin-left: -3%;
+    margin-right: -2%;
+}
+
+.select_thread_table_row{
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 26%;
+    margin-right: 0%;
+    padding-top: 5px;
+}
+
+.table_style{
+    width: 78%;
+    margin-left: -7%;
+}
+
+.title_col_width{
+    width: 27%;
+}
+
+.last_edited_col_width{
+    width: 34%;
+}
+
+.by_col_width{
+    width: 19%;
+}
+
+.no_of_entries_col_width{
+    width: 21%;
+}
+
+.button_style{
+    font-size: 15px;
+    width: 50%;
+    height: 50px;
+}
+
+.button_group_style{
+    margin-left: 34%;
+    padding-top: 18px;
+}
+
+.div_scroll_style{
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow: auto;
+    width: 166%;
+    margin-left: -33%;
+}
+
+.table-hover .table-info:hover, .table-hover .table-info:hover > th, .table-hover .table-info:hover > td{
+    background-color: #242157;
+}
+
+.radio_button_style{
+    margin-right: 23%;
+    margin-left: 8%;
+}
+
+.text_align_style{
+    text-align: left;
+}
+
+.invlaid_error{
+    color: red;
+}
